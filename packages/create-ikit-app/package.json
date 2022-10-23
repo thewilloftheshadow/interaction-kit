@@ -17,6 +17,9 @@
 		"templates"
 	],
 	"dependencies": {
-		"create-create-app": "^7.3.0"
+		"prompts": "^2.4.2"
+	},
+	"devDependencies": {
+		"@types/prompts": "^2.4.1"
 	}
 }
