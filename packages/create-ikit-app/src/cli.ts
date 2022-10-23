@@ -59,8 +59,15 @@ const questions: PromptObject[] = [
 ];
 
 const run = async () => {
-	const response = await prompts(questions);
-	console.log(response);
+	const result: prompts.Answers<
+		| "value"
+		| "application_id"
+		| "public_key"
+		| "token"
+		| "development_server_id"
+		| "platform"
+	> = await prompts(questions);
+	console.log(result);
 };
 
 void run();
